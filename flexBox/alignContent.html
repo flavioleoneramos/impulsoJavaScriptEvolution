@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos - Align Content</title>
+
+    <style>
+      .container{
+        max-width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid orangered;
+      }
+
+      .item{
+        margin: 5px;
+        background-color: orangered;
+        padding: 0 5px;
+        flex: 1;
+      }
+
+      .stretch{
+        align-content: stretch;
+      }
+
+      .center{
+        align-content: center;
+      }
+
+      .flex-start{
+        align-content: flex-start;
+      }
+
+      .flex-end{
+        align-content: flex-end;
+      }
+
+      .around{
+        align-content: space-around;
+      }
+    </style>
+
+</head>
+<body>
+  <p>Stretch</p>
+  <div class="container stretch">
+    <div class="item">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</div>
+    <div class="item">lorem ipsumlorem ipsumlorem ipsum</div>
+    <div class="item">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</div>
+    <div class="item">lorem mlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</div>
+    <div class="item">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</div>
+    <div class="item">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</div>
+    <div class="item">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</div>
+  </div>
+
+  <p>Center</p>
+  <div class="container center">
+    <div class="item">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</div>
+    <div class="item">lorem ipsumlorem ipsumlorem ipsum</div>
+    <div class="item">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</div>
+    <div class="item">lorem mlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</div>
+    <div class="item">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</div>
+    <div class="item">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</div>
+    <div class="item">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</div>
+  </div>
+
+  <p>Flex-Start</p>
+  <div class="container flex-start">
+    <div class="item">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</div>
+    <div class="item">lorem ipsumlorem ipsumlorem ipsum</div>
+    <div class="item">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</div>
+    <div class="item">lorem mlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</div>
+    <div class="item">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</div>
+    <div class="item">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</div>
+    <div class="item">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</div>
+  </div>
+
+  <p>Flex-end</p>
+  <div class="container flex-end">
+    <div class="item">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</div>
+    <div class="item">lorem ipsumlorem ipsumlorem ipsum</div>
+    <div class="item">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</div>
+    <div class="item">lorem mlorem ipsumlorem ipsumlorem ipsumlorem psumlorem ipsum</div>
+    <div class="item">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</div>
+    <div class="item">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</div>
+    <div class="item">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</div>
+  </div>
+
+  <p>Flex-around</p>
+  <div class="container around">
+    <div class="item">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</div>
+    <div class="item">lorem ipsumlorem ipsumlorem ipsum</div>
+    <div class="item">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</div>
+    <div class="item">lorem mlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem</div>
+    <div class="item">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</div>
+    <div class="item">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</div>
+    <div class="item">lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</div>
+  </div>
+</body>
+</html>
