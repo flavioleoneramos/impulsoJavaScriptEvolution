@@ -6,33 +6,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BootCamp Impulso JavaScript</title>
   <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
-  <div id="container">
-    <header id="cabecalho">
+  <div class="container">
+    <header class="cabecalho flexCenter column flexStart">
       <div class="itemCabecalho">
-        <img src="#" alt="Dio">
+        <img src="./imagens/dio.png" alt="Dio">
       </div>
-      <div class="itemCabecalho">
+      <div class="itemCabecalho absolute">
         <nav id="menu">
-          <ul>
+          <div id="imgMenu">
+            <img src="./imagens/home.png" alt="Página inicial" id="iconMenu" onclick="abrirMenu()">
+          </div>
+          <ul id="ulNav">
             <li>
               <a href="./flexBox/index.html" class="linkMenu">Flex Box</a>
+            </li>
+            <li>
               <a href="./projetosFlexBox/index.html" class="linkMenu">Flex Box Projetos</a>
+            </li>
+            <li>
               <a href="./typeScript/src/index.html" class="linkMenu">TypeScript</a>
+            </li>
+            <li>
               <a href="./desafioTypeScript/index.html" class="linkMenu">Desafio TypeScript</a>
             </li>
           </ul>
         </nav>
       </div>
       <div class="itemCabecalho">
-        <img src="#" alt="Impulso JavaScript">
+        <img src="./imagens/imp.png" alt="Impulso JavaScript">
       </div>
     </header>
-    <section id="corpo">
+    <section class="corpo">
       <h1>Imersão no desenvolvimento em JavaScript</h1>
       <ul>
-        <h2>Módulos vistos durante o BootCamp</h2>
+        <h3>Módulos vistos durante o BootCamp</h3>
         <li>
           <h4>Módulo 0: </h4><em>Prepare-se para a jornada.</em>
         </li>
@@ -57,6 +67,33 @@
         
       </ul>
     </section>
+
+    <footer class="rodape spaceBetween column">
+        <div class="itemRodape">
+          <h3>Contato</h3><br/>
+          <a href="#" class="linkRedes"><img src="./imagens/linkedin.png" alt="Linkedin">&nbsp;Linkedin</a><br/>
+          <a href="#" class="linkRedes"><img src="./imagens/github.png" alt="GitHub">&nbsp;GitHub</a><br/>
+          <a href="#" class="linkRedes"><img src="./imagens/email.png" alt="E-mail">&nbsp;E-mail</a><br/>
+        </div>
+        <div class="itemRodape radio">
+          <img src="./imagens/foto.jpg" alt="Flávio Ramos" id="fotoPerfil">
+        </div>
+    </footer>
   </div>
+
+  <script>
+
+    let txtImg = document.getElementById("imgMenu");
+    let ulNav = document.getElementById("ulNav");
+    function abrirMenu(){
+      ulNav.style.display = "block";
+      txtImg.innerHTML = "<img src='./imagens/delete.png' alt='Página inicial' id='iconMenu' onclick='fecharMenu()'>";
+    }
+
+    function fecharMenu(){
+      ulNav.style.display = "none";
+      txtImg.innerHTML = "<img src='./imagens/home.png' alt='Página inicial' id='iconMenu' onclick='abrirMenu()'>";
+    }
+  </script>
 </body>
 </html>

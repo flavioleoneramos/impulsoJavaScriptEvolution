@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+a.linkMenu{
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  color:wheat;
+  font-weight: bold;
+}
+
+a.linkMenu:hover{
+  color: wheat;
+}
+
+section.corpo ul li{
+  margin-bottom: 10px;
+}
+
+section.corpo h1{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#container{
+  width: 100%;
+}
+
+ul{
+  list-style: none;
+}
+
+header.cabecalho{
+  display: flex;
+  margin-bottom: 10px;
+}
+
+nav#menu{
+  position: relative;
+}
+
+nav#menu ul#ulNav li{
+  display: inline;
+  background-color: rgba(29, 14, 7);
+  padding: 5px;
+  border-radius: 5px;
+  margin: 10px;
+  
+}
+
+header.cabecalho div.itemCabecalho{
+  border: 2px solid wheat;
+  margin: 5px;
+  text-align: center;
+  padding: 10px;
+}
+
+section.corpo{
+  border: 2px solid wheat;
+  padding: 15px;
+  margin: 5px;
+}
+
+footer.rodape{
+  display: flex;
+  margin: auto;
+  align-items: center;
+  max-width: 600px;
+}
+
+footer.rodape .itemRodape{
+  margin: 10px;
+}
+
+footer.rodape .itemRodape a.linkRedes{
+  text-decoration: none;
+  max-width: 5px;
+  color: black;
+  font-weight: bold;
+}
+
+footer.rodape .itemRodape a.linkRedes:hover{
+  text-decoration: underline;
+}
+
+footer.rodape .itemRodape img#fotoPerfil{
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+@media screen and (max-width: 900px) {
+
+  #iconMenu{
+    display: block;
+    cursor: pointer;
+  }
+
+  .imgMenu{
+    position: absolute;
+    right: -10px;
+    top: -20px;
+    padding: 5px;
+  }
+
+  .column{
+    flex-direction: column;
+  }
+
+  .flexStart{
+    justify-content: flex-start;
+  }
+
+  .absolute{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color:rgba(29, 14, 7,.5);
+    border-radius: 5px;
+  }
+
+  nav#menu ul#ulNav{
+    display: none;
+  }
+
+  nav#menu ul#ulNav li{
+    display: list-item;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .left{
+    text-align: left;
+    margin-left: 15px;
+  }
+
+  header.cabecalho div.itemCabecalho{
+    text-align: left;
+    margin-left: 15px;
+  }
+
+}
+
+@media screen and (min-width: 900px) {
+
+  #iconMenu{
+    display: none;
+  }
+
+  .flexCenter{
+    justify-content: center;
+  }
+
+  .spaceBetween{
+    justify-content: space-between;
+  }
+
+  nav#menu ul#ulNav{
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
