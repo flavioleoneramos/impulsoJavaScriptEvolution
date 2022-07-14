@@ -1,9 +1,0 @@
-var button = document.getElementById("button");
-var input1 = document.getElementById("input1");
-var input2 = document.getElementById("input2");
-function somar(num1, num2) {
-    return num1 + num2;
-}
-button === null || button === void 0 ? void 0 : button.addEventListener("click", function () {
-    console.log(somar(input1, input2));
-});
